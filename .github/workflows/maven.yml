@@ -30,3 +30,9 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
 
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v4
+      with:
+       name: target_artifacts
+       path: target
+       retention-days: 5
