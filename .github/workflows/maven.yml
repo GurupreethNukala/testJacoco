@@ -27,8 +27,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn clean install
+
     - name: open
       run: type C:\Users\runneradmin\.m2\settings.xml
 
